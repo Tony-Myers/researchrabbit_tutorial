@@ -81,68 +81,100 @@
   <div id="intro" class="bg-white p-8 rounded-xl shadow-lg mb-12 scroll-mt-20">
     <h2 class="text-3xl font-bold text-slate-800 mb-4">What is ResearchRabbit?</h2>
     <p class="text-lg text-slate-700 mb-4">
-      Think of ResearchRabbit as "Spotify for papers." Instead of relying only on keywords, you use its AI to find related articles based on connections.
-    </p>
-    <p class="text-lg text-slate-700">
-      You "seed" it with a few key papers you already know are relevant, and it builds a network around them. It shows you:
+      Think of ResearchRabbit as "Spotify for papers." Instead of relying only on keywords, you use its AI to find related articles based on connections. You "seed" it with a few key papers, and it builds a network around them, showing you:
     </p>
     <ul class="list-disc list-inside text-lg text-slate-700 mt-4 space-y-2">
       <li><strong>Similar Work:</strong> Other papers on the same topic.</li>
       <li><strong>Earlier Work:</strong> The bibliography of your seed paper (what it cited).</li>
       <li><strong>Later Work:</strong> Papers that have cited your seed paper since it was published.</li>
     </ul>
-    <p class="text-lg text-slate-700 mt-4">
-      It helps you visualise these connections in a graph, discover overlooked papers, and monitor new research in your area, all for free.
+    <p class="text-lg text-slate-700 mt-4 font-semibold">
+      Crucially, ResearchRabbit is "free forever for researchers." This makes it an essential tool for students, as similar tools like Connected Papers limit you to only a few free searches.
     </p>
   </div>
 
   <!-- How to Use It -->
   <div id="steps" class="bg-sky-50 p-8 rounded-xl border border-sky-200 mb-12 scroll-mt-20">
-    <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">How to Use It: A 6-Step Workflow</h2>
+    <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">How to Use It: A 7-Step Workflow</h2>
     <div class="max-w-3xl mx-auto space-y-8">
-      <!-- Step 1 -->
+
+      <!-- Step 1: Categories vs Collections -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">1</div>
         <div>
-          <h3 class="text-2xl font-semibold text-slate-800 mb-2">Create a "Collection"</h3>
-          <p class="text-lg text-slate-700">A Collection is a folder for a specific project (e.g., "Thesis Chapter 1," "Literature Review"). This is where you will save all the papers you find.</p>
+          <h3 class="text-2xl font-semibold text-slate-800 mb-2">Understand Your Folders</h3>
+          <p class="text-lg text-slate-700 mb-4">The most important concept to grasp is the two-level folder system. Getting this right from the start will keep you organised.</p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse border border-slate-300">
+              <thead>
+                <tr class="bg-slate-100">
+                  <th class="border border-slate-300 p-3 font-semibold">Concept</th>
+                  <th class="border border-slate-300 p-3 font-semibold">What It Is (and Why You Should Use It)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-slate-300 p-3 align-top"><strong>Category</strong></td>
+                  <td class="border border-slate-300 p-3 align-top">Think of this as a **main folder** for a big project (e.g., your dissertation, a specific course). It keeps all related research grouped together.</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 p-3 align-top"><strong>Collection</strong></td>
+                  <td class="border border-slate-300 p-3 align-top">Think of this as a **sub-folder** for a specific theme *within* that project (e.g., "Chapter 1: Literature Review," "Methods Section").</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
+
       <!-- Step 2 -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">2</div>
         <div>
-          <h3 class_slug="text-2xl font-semibold text-slate-800 mb-2">Add "Seed Papers"</h3>
-          <p class="text-lg text-slate-700">Find 1-5 papers you *know* are perfect for your topic. You can add them by title, DOI, or by importing your Zotero/Mendeley library. These "seed papers" teach the AI what you are looking for.</p>
+          <h3 class="text-2xl font-semibold text-slate-800 mb-2">Create a "Collection"</h3>
+          <p class="text-lg text-slate-700">Inside your main Category, create your first Collection. This is the folder where you will save all the papers you find for this specific topic.</p>
         </div>
       </div>
       <!-- Step 3 -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">3</div>
         <div>
-          <h3 class="text-2xl font-semibold text-slate-800 mb-2">Explore the Network</h3>
-          <p class="text-lg text-slate-700">Click on one of your seed papers. ResearchRabbit will instantly show you columns for "Similar Work," "Earlier Work," and "Later Work." This is your main discovery engine.</p>
+          <h3 class_slug="text-2xl font-semibold text-slate-800 mb-2">Add "Seed Papers"</h3>
+          <p class="text-lg text-slate-700">Find 1-5 papers you *know* are perfect for your topic. You can add them by title, DOI, or by importing your Zotero/Mendeley library. These "seed papers" teach the AI what you are looking for.</p>
         </div>
       </div>
       <!-- Step 4 -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">4</div>
         <div>
-          <h3 class="text-2xl font-semibold text-slate-800 mb-2">Build Your Collection</h3>
-          <p class="text-lg text-slate-700">As you explore the "Similar Work" column, click the "+" button on any interesting papers to add them to your Collection. Each paper you add makes the recommendations smarter.</p>
+          <h3 class="text-2xl font-semibold text-slate-800 mb-2">Explore the Network</h3>
+          <p class="text-lg text-slate-700">Click on one of your seed papers. ResearchRabbit will instantly show you columns for "Similar Work," "Earlier Work," and "Later Work." This is your main discovery engine.</p>
         </div>
       </div>
       <!-- Step 5 -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">5</div>
         <div>
-          <h3 class="text-2xl font-semibold text-slate-800 mb-2">Visualise the Graph</h3>
-          <p class="text-lg text-slate-700">Click the "Graph" view to see a visual map of your papers. This helps you spot connections, identify key authors, and see the structure of the research field.</p>
+          <h3 class="text-2xl font-semibold text-slate-800 mb-2">Build Your Collection</h3>
+          <p class="text-lg text-slate-700">As you explore, click the "+" button on any interesting papers to add them to your Collection. Each paper you add makes the recommendations smarter. Saved papers will turn **green** in the list.</p>
         </div>
       </div>
       <!-- Step 6 -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">6</div>
+        <div>
+          <h3 class="text-2xl font-semibold text-slate-800 mb-2">Visualise the Graph & Timeline</h3>
+          <p class="text-lg text-slate-700 mb-4">Click the "Graph" view to see a visual map of your papers. This helps you spot connections and identify key authors. Critically, use the **Timeline View** at the bottom to see the chronological history of the research and how ideas have evolved.</p>
+          
+          <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+            <h4 class="font-semibold text-blue-700 mb-2">Coach's Tip:</h4>
+            <p class="text-blue-700">The discovery graph view **does not save** when you navigate away. It is a temporary workspace for exploration. The only things that save are the papers you explicitly add to your Collection. Use the graph to find papers, then add them!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Step 7 -->
+      <div class="flex items-start space-x-4">
+        <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">7</div>
         <div>
           <h3 class="text-2xl font-semibold text-slate-800 mb-2">Set Up Alerts</h3>
           <p class="text-lg text-slate-700">Once your Collection is strong, click the "Monitor" button. ResearchRabbit will email you when new papers are published that are relevant to your Collection, keeping you up-to-date automatically.</p>
@@ -208,23 +240,37 @@
   <!-- Pro-Tips -->
   <div id="tips" class="bg-white p-8 rounded-xl shadow-lg mb-12 scroll-mt-20">
     <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Pro-Tips for Better Results</h2>
-    <ul class="text-lg text-slate-700 max-w-3xl mx-auto list-disc pl-6 space-y-3">
-      <li>
-        <strong>Use Multiple Seed Papers:</strong> A collection with 5-10 good seed papers will give you *much* better recommendations than a collection with just one.
-      </li>
-      <li>
-        <strong>Connect Zotero/Mendeley:</strong> Sync your reference manager immediately. This allows you to add seed papers from your library and save new discoveries back to Zotero with one click.
-      </li>
-      <li>
-        <strong>Follow Key Authors:</strong> When you find a paper you love, click the author's name. ResearchRabbit will show you their other work, and you can "Follow" them to be alerted of their new publications.
-      </li>
-      <li>
-        <strong>Read the Graph:</strong> In the graph view, larger dots (nodes) often represent papers with more connections (citations). This can help you quickly identify seminal papers in the field.
-      </li>
-      <li>
-        <strong>Be Selective:</strong> Do not add every paper to your collection. Be critical. A clean, focused collection is more useful than a "dump" folder.
-      </li>
-    </ul>
+    <div class="max-w-3xl mx-auto space-y-4">
+
+      <!-- Zotero Tip -->
+      <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-200">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Power-Up: Connect Zotero Immediately</h3>
+        <p class="text-lg text-slate-700 mb-4">This is the most important thing you can do. It creates a seamless system to find papers in ResearchRabbit and automatically have them ready for citation in Zotero. Any paper you add to a synced collection in ResearchRabbit will appear in your Zotero library.</p>
+        <h4 class="text-lg font-semibold text-slate-800 mb-2">How to Connect:</h4>
+        <ol class="list-decimal list-inside text-slate-700 space-y-2">
+          <li><strong>Sync Zotero First:</strong> Open your Zotero desktop app and press the "Sync" button. ResearchRabbit connects to your *online* Zotero library, so it must be up-to-date.</li>
+          <li><strong>Import in ResearchRabbit:</strong> On your dashboard, click "Import Zotero collection".</li>
+          <li><strong>Log In:</strong> You will be prompted to log in to your online Zotero account to authorise the connection.</li>
+          <li><strong>Choose Collection:</strong> Select the Zotero collection you want to sync. Now you are ready to go.</li>
+        </ol>
+      </div>
+
+      <!-- Other Tips -->
+      <ul class="text-lg text-slate-700 list-disc pl-6 space-y-3 pt-6">
+        <li>
+          <strong>Use Multiple Seed Papers:</strong> A collection with 5-10 good seed papers will give you *much* better recommendations than a collection with just one.
+        </li>
+        <li>
+          <strong>Follow Key Authors:</strong> When you find a paper you love, click the author's name. ResearchRabbit will show you their other work, and you can "Follow" them to be alerted of their new publications.
+        </li>
+        <li>
+          <strong>Read the Graph:</strong> In the graph view, larger dots (nodes) often represent papers with more connections (citations). This can help you quickly identify seminal papers in the field.
+        </li>
+        <li>
+          <strong>Be Selective:</strong> Do not add every paper to your collection. Be critical. A clean, focused collection is more useful than a "dump" folder.
+        </li>
+      </ul>
+    </div>
   </div>
 
   <!-- Checklist -->
@@ -232,35 +278,35 @@
     <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Your First Tasks</h2>
     <p class="text-lg text-slate-600 mb-6 text-center">Try these steps to get started with your own research.</p>
     <div class="space-y-4 max-w-lg mx-auto">
-      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-2 rounded transition-colors cursor-pointer">
+      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-3 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-slate-200">
         <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
         <span>Sign up for a free ResearchRabbit account.</span>
       </label>
-      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-2 rounded transition-colors cursor-pointer">
+      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-3 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-slate-200">
         <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
-        <span>Create your first "Collection" for a current project.</span>
+        <span>Connect your Zotero account (see Pro-Tips).</span>
+      </label>
+      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-3 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-slate-200">
+        <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
+        <span>Create a "Category" for a major project.</span>
       </Dlabel>
-      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-2 rounded transition-colors cursor-pointer">
+      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-3 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-slate-200">
+        <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
+        <span>Create your first "Collection" inside that Category.</span>
+      </Dlabel>
+      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-3 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-slate-200">
         <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
         <span>Add 3-5 "seed papers" you already know and love.</span>
       </label>
-      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-2 rounded transition-colors cursor-pointer">
+      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-3 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-slate-200">
         <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
-        <span>Explore the "Similar Work" and "Later Work" for one seed paper.</span>
+        <span>Explore "Similar Work" and add 5 new papers (watch them turn green).</span>
       </label>
-      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-2 rounded transition-colors cursor-pointer">
+      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-3 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-slate-200">
         <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
-        <span>Add 5 new, relevant papers to your Collection.</span>
+        <span>View the "Timeline" for your new collection.</span>
       </label>
-      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-2 rounded transition-colors cursor-pointer">
-        <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
-        <span>Click the "Graph" view to see the network.</span>
-      </label>
-      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-2 rounded transition-colors cursor-pointer">
-        <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
-        <span>Find a key author in your field and view their profile.</span>
-      </label>
-      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-2 rounded transition-colors cursor-pointer">
+      <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-3 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-slate-200">
         <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
         <span>Click "Monitor" on your Collection to get alerts.</span>
       </label>
