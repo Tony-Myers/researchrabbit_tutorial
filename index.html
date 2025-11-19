@@ -11,28 +11,23 @@
   <style>
     body { font-family:'Inter',sans-serif; background:#f8fafc; color:#1e293b }
     .nav-link { transition:color .3s,border-color .3s,background-color .3s; border-bottom:2px solid transparent; cursor:pointer; border-radius: 4px; }
-    /* Simple active state for demonstration */
     .nav-link.active,.nav-link:hover { color:#0369a1; border-bottom-color:#0369a1; background-color: rgba(3, 105, 161, 0.1); }
     .nav-link:focus, button:focus, a:focus, input:focus { outline: 3px solid #0369a1; outline-offset: 2px; }
     .feature-card { transition:transform .3s,box-shadow .3s }
     .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,.05), 0 4px 6px -4px rgba(0,0,0,.05); }
-    /* Style for checked checklist items */
     input[type="checkbox"]:checked + span { text-decoration: line-through; color: #64748b; }
     .step-number { width: 40px; height: 40px; flex-shrink: 0; }
   </style>
 </head>
 <body class="antialiased">
 
-<!-- Header -->
 <header class="bg-white shadow-sm sticky top-0 z-10">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
-      <!-- Logo/Title -->
       <div class="flex-shrink-0 flex items-center">
         <span class="font-bold text-xl text-sky-700">AI for Students</span>
       </div>
       
-      <!-- Desktop Nav -->
       <div class="hidden sm:ml-6 sm:flex sm:space-x-4">
         <a href="#intro" class="nav-link px-3 py-2 text-sm font-medium text-slate-700">What is it?</a>
         <a href="#steps" class="nav-link px-3 py-2 text-sm font-medium text-slate-700">How to Use</a>
@@ -41,7 +36,6 @@
         <a href="#tasks" class="nav-link px-3 py-2 text-sm font-medium text-slate-700">Tasks</a>
       </div>
 
-      <!-- Mobile Menu Button -->
       <div class="sm:hidden flex items-center">
         <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-slate-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500" aria-controls="mobile-menu" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -56,7 +50,6 @@
     </div>
   </nav>
 
-  <!-- Mobile Menu, show/hide based on menu state. -->
   <div class="hidden sm:hidden" id="mobile-menu">
     <div class="px-2 pt-2 pb-3 space-y-1">
       <a href="#intro" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700">What is it?</a>
@@ -68,20 +61,23 @@
   </div>
 </header>
 
-<!-- Main Content -->
 <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-  <!-- Hero Section -->
   <div class="text-center mb-16">
     <h1 class="text-4xl md:text-5xl font-extrabold text-sky-800 mb-4">ResearchRabbit: Complete Tutorial</h1>
-    <p class="text-xl text-slate-600 max-w-3xl mx-auto">Your AI-Powered Literature Discovery Partner. Stop searching, start discovering.</p>
+    <p class="text-xl text-slate-600 max-w-3xl mx-auto mb-8">Your AI-Powered Literature Discovery Partner. Stop searching, start discovering.</p>
+    <a href="https://www.researchrabbit.ai/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-sky-600 hover:bg-sky-700 md:py-4 md:text-lg shadow-lg transition-all hover:-translate-y-1">
+      Visit ResearchRabbit
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+      </svg>
+    </a>
   </div>
 
-  <!-- What is ResearchRabbit? -->
   <div id="intro" class="bg-white p-8 rounded-xl shadow-lg mb-12 scroll-mt-20">
     <h2 class="text-3xl font-bold text-slate-800 mb-4">What is ResearchRabbit?</h2>
     <p class="text-lg text-slate-700 mb-4">
-      Think of ResearchRabbit as "Spotify for papers." Instead of relying only on keywords, you use its AI to find related articles based on connections. You "seed" it with a few key papers, and it builds a network around them, showing you:
+      Think of <a href="https://www.researchrabbit.ai/" target="_blank" class="text-sky-600 hover:underline font-medium">ResearchRabbit</a> as "Spotify for papers." Instead of relying only on keywords, you use its AI to find related articles based on connections. You "seed" it with a few key papers, and it builds a network around them, showing you:
     </p>
     <ul class="list-disc list-inside text-lg text-slate-700 mt-4 space-y-2">
       <li><strong>Similar Work:</strong> Other papers on the same topic.</li>
@@ -93,12 +89,10 @@
     </p>
   </div>
 
-  <!-- How to Use It -->
   <div id="steps" class="bg-sky-50 p-8 rounded-xl border border-sky-200 mb-12 scroll-mt-20">
     <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">How to Use It: A 7-Step Workflow</h2>
     <div class="max-w-3xl mx-auto space-y-8">
 
-      <!-- Step 1: Categories vs Collections -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">1</div>
         <div>
@@ -127,7 +121,6 @@
         </div>
       </div>
 
-      <!-- Step 2 -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">2</div>
         <div>
@@ -135,15 +128,13 @@
           <p class="text-lg text-slate-700">Inside your main Category, create your first Collection. This is the folder where you will save all the papers you find for this specific topic.</p>
         </div>
       </div>
-      <!-- Step 3 -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">3</div>
         <div>
-          <h3 class_slug="text-2xl font-semibold text-slate-800 mb-2">Add "Seed Papers"</h3>
+          <h3 class="text-2xl font-semibold text-slate-800 mb-2">Add "Seed Papers"</h3>
           <p class="text-lg text-slate-700">Find 1-5 papers you *know* are perfect for your topic. You can add them by title, DOI, or by importing your Zotero/Mendeley library. These "seed papers" teach the AI what you are looking for.</p>
         </div>
       </div>
-      <!-- Step 4 -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">4</div>
         <div>
@@ -151,7 +142,6 @@
           <p class="text-lg text-slate-700">Click on one of your seed papers. ResearchRabbit will instantly show you columns for "Similar Work," "Earlier Work," and "Later Work." This is your main discovery engine.</p>
         </div>
       </div>
-      <!-- Step 5 -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">5</div>
         <div>
@@ -159,7 +149,6 @@
           <p class="text-lg text-slate-700">As you explore, click the "+" button on any interesting papers to add them to your Collection. Each paper you add makes the recommendations smarter. Saved papers will turn **green** in the list.</p>
         </div>
       </div>
-      <!-- Step 6 -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">6</div>
         <div>
@@ -172,7 +161,6 @@
           </div>
         </div>
       </div>
-      <!-- Step 7 -->
       <div class="flex items-start space-x-4">
         <div class="step-number bg-sky-600 text-white font-bold rounded-full flex items-center justify-center text-xl">7</div>
         <div>
@@ -183,12 +171,10 @@
     </div>
   </div>
 
-  <!-- Core Features -->
   <div id="features" class="mb-12 scroll-mt-20">
     <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">Core Functions</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       
-      <!-- Feature 1: Seed-Based Discovery -->
       <div class="feature-card bg-white p-6 rounded-xl shadow-lg border border-slate-100">
         <div class="p-3 bg-sky-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -200,7 +186,6 @@
         <p class="text-slate-600">Find "Similar," "Earlier," and "Later" work for any paper, allowing you to move forwards and backwards in the citation chain.</p>
       </div>
 
-      <!-- Feature 2: Interactive Network Graphs -->
       <div class="feature-card bg-white p-6 rounded-xl shadow-lg border border-slate-100">
         <div class="p-3 bg-sky-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -212,7 +197,6 @@
         <p class="text-slate-600">Visualise the connections between papers and authors to understand the structure of a research field and identify key clusters.</p>
       </div>
 
-      <!-- Feature 3: Smart Collections -->
       <div class="feature-card bg-white p-6 rounded-xl shadow-lg border border-slate-100">
         <div class="p-3 bg-sky-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -223,7 +207,6 @@
         <p class="text-slate-600">Organise your papers into "playlists" for different projects. Connect to Zotero to sync your existing library automatically.</p>
       </div>
 
-      <!-- Feature 4: Continuous Monitoring -->
       <div class="feature-card bg-white p-6 rounded-xl shadow-lg border border-slate-100">
         <div class="p-3 bg-sky-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -237,25 +220,48 @@
     </div>
   </div>
 
-  <!-- Pro-Tips -->
   <div id="tips" class="bg-white p-8 rounded-xl shadow-lg mb-12 scroll-mt-20">
     <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Pro-Tips for Better Results</h2>
     <div class="max-w-3xl mx-auto space-y-4">
 
-      <!-- Zotero Tip -->
       <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-200">
-        <h3 class="text-xl font-bold text-emerald-700 mb-3">Power-Up: Connect Zotero Immediately</h3>
-        <p class="text-lg text-slate-700 mb-4">This is the most important thing you can do. It creates a seamless system to find papers in ResearchRabbit and automatically have them ready for citation in Zotero. Any paper you add to a synced collection in ResearchRabbit will appear in your Zotero library.</p>
-        <h4 class="text-lg font-semibold text-slate-800 mb-2">How to Connect:</h4>
-        <ol class="list-decimal list-inside text-slate-700 space-y-2">
-          <li><strong>Sync Zotero First:</strong> Open your Zotero desktop app and press the "Sync" button. ResearchRabbit connects to your *online* Zotero library, so it must be up-to-date.</li>
-          <li><strong>Import in ResearchRabbit:</strong> On your dashboard, click "Import Zotero collection".</li>
-          <li><strong>Log In:</strong> You will be prompted to log in to your online Zotero account to authorise the connection.</li>
-          <li><strong>Choose Collection:</strong> Select the Zotero collection you want to sync. Now you are ready to go.</li>
-        </ol>
+        <h3 class="text-xl font-bold text-emerald-800 mb-4">Power-Up: Connect Zotero (The Deep Dive)</h3>
+        <p class="text-slate-700 mb-4">Connecting Zotero allows you to import collections and sync discoveries automatically. Here is the detailed workflow to ensure it works seamlessly:</p>
+
+        <h4 class="font-bold text-emerald-700 mt-4 mb-2 text-lg">Phase 1: Preparation (Do this first)</h4>
+        <p class="text-sm text-slate-600 mb-2">ResearchRabbit connects to your <em>online</em> Zotero account. You must ensure your desktop data is synced to the cloud first.</p>
+        <ul class="list-disc list-inside text-slate-700 space-y-1 text-base ml-2">
+          <li>Open <strong>Zotero Desktop</strong>.</li>
+          <li>Go to <strong>Edit</strong> > <strong>Settings</strong> (or Preferences) > <strong>Sync</strong>.</li>
+          <li>Ensure "Sync automatically" is ticked.</li>
+          <li>Click the green sync arrow (top right of Zotero main window) to push your latest data to the web.</li>
+        </ul>
+
+        <h4 class="font-bold text-emerald-700 mt-6 mb-2 text-lg">Phase 2: Connect Account</h4>
+        <ul class="list-disc list-inside text-slate-700 space-y-1 text-base ml-2">
+          <li>Log in to ResearchRabbit.</li>
+          <li>Look for the <strong>'Import Zotero Collection'</strong> button (usually orange/Z logo).</li>
+          <li>Log in with your Zotero credentials when prompted and click <strong>'Accept Defaults'</strong>.</li>
+        </ul>
+
+        <h4 class="font-bold text-emerald-700 mt-6 mb-2 text-lg">Phase 3: Importing & Syncing</h4>
+        <p class="text-sm text-slate-600 mb-2">Your data does not appear automatically; you must select folders to sync.</p>
+        <ul class="list-disc list-inside text-slate-700 space-y-1 text-base ml-2">
+          <li>Click 'Import Zotero Collection' again to see your folder list.</li>
+          <li>Select the specific collection you wish to analyse.</li>
+          <li><strong>Zotero &rarr; ResearchRabbit:</strong> The folder appears as a new Collection in ResearchRabbit.</li>
+          <li><strong>ResearchRabbit &rarr; Zotero:</strong> Any paper you add to this collection in ResearchRabbit will automatically appear in your Zotero library.</li>
+        </ul>
+
+        <div class="mt-6 bg-emerald-100 p-4 rounded border border-emerald-300">
+          <p class="text-sm text-emerald-900 font-bold mb-2">Important Limitations:</p>
+          <ul class="list-disc list-inside text-sm text-emerald-900 space-y-1">
+            <li><strong>Group Libraries:</strong> ResearchRabbit usually only syncs with your Personal Library. It often fails to see Group Libraries.</li>
+            <li><strong>One-way Deletion:</strong> If you delete a paper in ResearchRabbit, it <em>does not</em> delete it from Zotero (to protect your data).</li>
+          </ul>
+        </div>
       </div>
 
-      <!-- Other Tips -->
       <ul class="text-lg text-slate-700 list-disc pl-6 space-y-3 pt-6">
         <li>
           <strong>Use Multiple Seed Papers:</strong> A collection with 5-10 good seed papers will give you *much* better recommendations than a collection with just one.
@@ -273,7 +279,6 @@
     </div>
   </div>
 
-  <!-- Checklist -->
   <div id="tasks" class="bg-sky-50 p-8 rounded-xl border border-sky-200 scroll-mt-20">
     <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Your First Tasks</h2>
     <p class="text-lg text-slate-600 mb-6 text-center">Try these steps to get started with your own research.</p>
@@ -289,11 +294,11 @@
       <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-3 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-slate-200">
         <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
         <span>Create a "Category" for a major project.</span>
-      </Dlabel>
+      </label>
       <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-3 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-slate-200">
         <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
         <span>Create your first "Collection" inside that Category.</span>
-      </Dlabel>
+      </label>
       <label class="flex items-center space-x-3 text-slate-700 hover:bg-white p-3 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-slate-200">
         <input type="checkbox" class="w-5 h-5 text-sky-600 rounded focus:ring-sky-500">
         <span>Add 3-5 "seed papers" you already know and love.</span>
@@ -313,13 +318,11 @@
     </div>
   </div>
 
-  <!-- Back link -->
   <div class="text-center mt-12">
     <a href="index.html" class="px-5 py-3 bg-slate-200 text-slate-700 font-medium rounded-lg hover:bg-slate-300 transition-colors">← Back to Home</a>
   </div>
 </main>
 
-<!-- Footer -->
 <footer class="bg-slate-800 text-slate-300 py-6 text-center text-sm mt-16">
   Tony Myers © 2025
 </footer>
